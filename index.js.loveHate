@@ -1,0 +1,25 @@
+$('#love-box').css("background-color",'pink');
+$('#hate-box').css("background-color",'grey');
+
+$('#love-box').append($('.image0'));
+$('#love-box').append($('.image1'));
+$('#love-box').append($('.image5'));
+$('#love-box').append($('.image6'));
+
+$('#love-box').append($('#img2'));
+$('#love-box').append($('#img3'));
+$('#love-box').append($('#img4'));
+//var imgIds = 
+
+$('#hate-box').append($('img[title="image7"]'));
+$('#love-box').append($('img[src="images/8.jpg"]'));
+$('#love-box').append($('img[src="images/9.jpg"]'));
+//$('#love-box').append($('img:last-of-type'));// l'ordre des objets changent avec jquery !!
+
+$('#love-box').prepend('<h3>loved</h3>');
+$('#hate-box').prepend('<h3>hated</h3>');
+
+//remove the "worst"
+$('#img3').remove();
+//favorite
+$('.image5').css("border","5px gold solid");
